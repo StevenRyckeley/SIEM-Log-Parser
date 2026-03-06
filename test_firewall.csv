@@ -1,0 +1,39 @@
+timestamp,source_ip,dest_ip,action,protocol,port,bytes,message
+2026-03-10 07:00:01,192.168.1.50,10.0.0.1,ALLOW,TCP,443,1200,Normal HTTPS traffic
+2026-03-10 07:05:00,192.168.1.51,10.0.0.1,ALLOW,TCP,443,980,Normal HTTPS traffic
+2026-03-10 07:10:00,192.168.1.52,8.8.8.8,ALLOW,UDP,53,120,DNS query
+2026-03-10 07:15:00,192.168.1.53,10.0.0.5,ALLOW,TCP,80,3400,Normal HTTP traffic
+2026-03-10 08:00:01,10.0.0.77,192.168.1.10,BLOCKED,TCP,22,0,SSH brute force attack detected - repeated failure
+2026-03-10 08:00:03,10.0.0.77,192.168.1.10,BLOCKED,TCP,22,0,SSH brute force attack detected - repeated failure
+2026-03-10 08:00:05,10.0.0.77,192.168.1.10,BLOCKED,TCP,22,0,SSH brute force attack detected - repeated failure
+2026-03-10 08:00:07,10.0.0.77,192.168.1.11,BLOCKED,TCP,22,0,SSH connection denied - unauthorized source
+2026-03-10 08:15:00,203.0.113.5,192.168.1.20,BLOCKED,TCP,3389,0,RDP connection failure from external IP - unauthorized
+2026-03-10 08:15:02,203.0.113.5,192.168.1.21,BLOCKED,TCP,3389,0,RDP connection failure from external IP - unauthorized
+2026-03-10 08:15:04,203.0.113.5,192.168.1.22,BLOCKED,TCP,3389,0,RDP connection failure from external IP - unauthorized
+2026-03-10 09:00:00,192.168.1.50,10.0.0.2,ALLOW,TCP,443,2200,Normal HTTPS traffic
+2026-03-10 09:10:00,10.10.10.10,192.168.1.1,BLOCKED,ICMP,0,0,Port scan probe detected - anomaly
+2026-03-10 09:10:01,10.10.10.10,192.168.1.2,BLOCKED,ICMP,0,0,Port scan probe detected - anomaly
+2026-03-10 09:10:02,10.10.10.10,192.168.1.3,BLOCKED,ICMP,0,0,Port scan probe detected - anomaly
+2026-03-10 09:10:03,10.10.10.10,192.168.1.4,BLOCKED,ICMP,0,0,Port scan probe detected - anomaly
+2026-03-10 09:30:00,192.168.1.54,10.0.0.3,ALLOW,TCP,8080,1100,Application traffic
+2026-03-10 10:00:00,172.16.0.50,192.168.1.20,ALERT,TCP,445,0,SMB unauthorized access attempt - lateral movement suspected
+2026-03-10 10:00:01,172.16.0.50,192.168.1.21,ALERT,TCP,445,0,SMB unauthorized access attempt - lateral movement suspected
+2026-03-10 10:00:02,172.16.0.50,192.168.1.22,ALERT,TCP,445,0,SMB unauthorized access attempt - lateral movement suspected
+2026-03-10 10:30:00,192.168.1.55,10.0.0.1,ALLOW,TCP,443,890,Normal HTTPS traffic
+2026-03-10 11:00:00,192.168.1.56,10.0.0.4,ALLOW,UDP,53,130,DNS query
+2026-03-10 11:30:00,10.0.0.55,192.168.1.25,ALERT,TCP,1433,0,SQL injection attempt on database port - malicious payload detected
+2026-03-10 12:00:00,192.168.1.57,10.0.0.1,ALLOW,TCP,443,1500,Normal HTTPS traffic
+2026-03-10 12:30:00,198.51.100.15,192.168.1.10,BLOCKED,TCP,21,0,FTP connection denied from external - unauthorized
+2026-03-10 13:00:00,192.168.1.58,10.0.0.1,ALLOW,TCP,80,760,Normal HTTP traffic
+2026-03-10 13:30:00,203.0.113.15,192.168.1.10,ERROR,TCP,22,0,Malicious SSH key exchange attempt - exploit pattern detected
+2026-03-10 14:00:00,192.168.1.59,10.0.0.1,ALLOW,TCP,443,2100,Normal HTTPS traffic
+2026-03-10 14:30:00,10.0.0.77,192.168.1.15,BLOCKED,TCP,5985,0,WinRM connection attempt blocked - unauthorized source
+2026-03-10 15:00:00,192.168.1.60,10.0.0.5,ALLOW,TCP,443,980,Normal HTTPS traffic
+2026-03-10 15:30:00,172.16.0.88,192.168.1.30,ALERT,TCP,135,0,DCOM exploit attempt detected - attack signature matched
+2026-03-10 16:00:00,192.168.1.61,10.0.0.1,ALLOW,UDP,53,110,DNS query
+2026-03-10 17:00:00,192.168.1.62,10.0.0.2,ALLOW,TCP,443,1300,Normal HTTPS traffic
+2026-03-10 18:00:00,10.0.0.99,192.168.1.1,BLOCKED,TCP,23,0,Telnet connection denied - protocol not allowed
+2026-03-10 18:30:00,192.168.1.63,10.0.0.1,ALLOW,TCP,80,650,Normal HTTP traffic
+2026-03-10 22:00:00,192.168.1.99,10.0.0.100,ALERT,TCP,443,5500,After-hours access detected - unauthorized activity suspected
+2026-03-10 22:45:00,192.168.1.99,10.0.0.101,ALERT,TCP,8080,3200,After-hours access detected - unauthorized activity suspected
+2026-03-10 23:30:00,192.168.1.99,10.0.0.102,ALERT,TCP,443,4100,After-hours data transfer detected - anomaly flagged
